@@ -3,8 +3,9 @@ title: STEMJobsCR - Qué, Cómo y Por Qué.
 date: 2023-01-22
 categories: [EMPLEO]
 tags: [python, web scraping, costa rica]
+image:
+  path: /assets/img/posts/stemjobs-faq/cover.png
 ---
-![cover](/assets/img/posts/stemjobs-faq/cover.png)
 
 Mi nombre es Luis Vargas, soy Ingeniero en Ciberseguridad, y soy la (única) persona detrás de los canales de Telegram [@STEMJobsCR](https://t.me/s/STEMJobsCR) y [@STEMJobsLATAM](https://t.me/s/STEMJobsLATAM), de WhatsApp ([CR](https://whatsapp.com/channel/0029Vb8j98vIiRp29WtW8N32) y [LATAM](https://whatsapp.com/channel/0029Vb4IaaN545uneyEqGH1T)), y del servidor de Discord [EmpleoKB](https://empleokb.com), de ofertas de empleo en STEM.
 
@@ -32,7 +33,7 @@ Por varias razones:
 
 En resumen: hice los canales para mí, para aprender sobre varias cosas, pero los comparto públicamente porque creo que le pueden ser útiles a otras personas.
 
-## Otras preguntas:
+## Otras preguntas
 **Q**: ¿Qué gana con esto?  
 **A**: Aprender Python, sobre la nube, web scraping, tendencias del mercado laboral, etc (leer arriba).
 
@@ -74,3 +75,6 @@ En resumen: hice los canales para mí, para aprender sobre varias cosas, pero lo
 **A**: No, pero [stemjobscr.com](https://stemjobscr.com) y [empleokb.com](https://empleokb.com) redireccionan al discord.
 
 Por el momento éstas son las preguntas o dudas más frecuentes que me han llegado, pero voy a actualizar este blog periódicamente cuando sea necesario.
+
+## Stream del tercer aniversario del proyecto
+{% include embed/youtube.html id='_UnoUGCJK9M' %}

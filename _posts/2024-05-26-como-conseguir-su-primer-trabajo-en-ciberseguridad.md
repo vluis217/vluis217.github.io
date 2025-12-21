@@ -3,10 +3,11 @@ title: ¿Cómo conseguir su primer trabajo en ciberseguridad?
 date: 2024-05-26
 categories: [CIBERSEGURIDAD, EMPLEO]
 tags: [ciberseguridad, empleo, costa rica]
+image:
+  path: /assets/img/posts/como-conseguir-su-primer-trabajo-en-ciberseguridad/cover.png
 ---
-![cover](/assets/img/posts/como-conseguir-su-primer-trabajo-en-ciberseguridad/cover.png)
 
-Desde la publicación de mi blog anterior y el video sobre ["Cómo empezar en ciberseguridad"](https://vluis.hashnode.dev/como-empezar-en-ciberseguridad), mucha gente me ha hecho básicamente la misma pregunta de varias maneras:
+Desde la publicación de mi blog anterior y el video sobre ["Cómo empezar en ciberseguridad"](https://vluis217.github.io/posts/como-empezar-en-ciberseguridad/), mucha gente me ha hecho básicamente la misma pregunta de varias maneras:
 
 - _¿En qué empresas puedo buscar pasantías o puestos entry/junior en ciberseguridad?_
 - _¿Qué certificación me ayudaría a conseguir trabajo más rápido?_
@@ -90,8 +91,8 @@ Los siguientes son consejos varios no tan complejos como para dedicarles toda un
 
 ## Apéndice
 ### Mis videos sobre este tema
-- [¿Cómo conseguir trabajo en ciberseguridad? (YouTube)](https://www.youtube.com/watch?v=yMGySapzkL4)
-- [El ÚNICO video que vas a NECESITAR para empezar en CIBERSEGURIDAD este 2025 y ganar $999mil por hora (YouTube)](https://www.youtube.com/watch?v=THBnbU25ycQ)
+{% include embed/youtube.html id='yMGySapzkL4' %}
+{% include embed/youtube.html id='THBnbU25ycQ' %}
 
 ### Otros recursos útiles que pueden consultar
 - 🚨Curso gratuito de softskills para buscar empleo de TCM Security🚨: [https://academy.tcm-sec.com/p/soft-skills-for-the-job-market](https://academy.tcm-sec.com/p/soft-skills-for-the-job-market)

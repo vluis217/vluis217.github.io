@@ -3,12 +3,13 @@ title: Akamai friendzoneó a mi bot 😔
 date: 2025-09-08
 categories: [CIBERSEGURIDAD]
 tags: [ciberseguridad, akamai, web scraping]
+image:
+  path: /assets/img/posts/akamai-friendzoneo-a-mi-bot/cover.png
 ---
-![cover](/assets/img/posts/akamai-friendzoneo-a-mi-bot/cover.png)
 
 ## El problema
 
-Como muchas personas saben, administro el [proyecto STEM Jobs CR](https://vluis.hashnode.dev/stemjobs-faq) desde hace tiempo, el cual consiste en un bot que monitorea continuamente más de 200 bolsas de empleo y envía notificaciones a Telegram, Discord y WhatsApp cuando detecta nuevas publicaciones de puestos de empleo en STEM.
+Como muchas personas saben, administro el [proyecto STEM Jobs CR](https://vluis217.github.io/posts/stemjobs-faq/) desde hace tiempo, el cual consiste en un bot que monitorea continuamente más de 200 bolsas de empleo y envía notificaciones a Telegram, Discord y WhatsApp cuando detecta nuevas publicaciones de puestos de empleo en STEM.
 
 Hace unas semanas mi bot empezó a fallar de forma intermitente, y al revisar los logs me di cuenta que estaba tardando mucho más de lo normal en terminar su ejecución. Además, noté que había muchas instancias del bot ejecutándose en segundo plano, algunas hasta con días de estar "colgadas", sin terminar nunca.
 
@@ -29,7 +30,7 @@ Dicho comportamiento me hizo pensar que tal vez la bolsa de empleo ahora estaba 
 
 Tanto la dirección IP como los dominios de los CNAMEs son propiedad de Akamai, lo cual explica tanto el problema inicial de "latencia infinita", como la inconsistencia al usar requests aparentemente similares en diferentes sesiones de comunicación.
 
-Según Wikipedia, Akamai es una compañía especializada en content delivery network (CDN), ciberseguridad, mitigación de ataques DDoS y servicios en la nube. Y como anécdota personal, hace años tuve un par de entrevistas laborales ahí, y en el proceso me di cuenta que en esa empresa tienen un conocimiento bastante amplio y profundo de cómo funcionan las redes a bajo nivel, con un enfoque especial en el proceso "[_three-way handshake_](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh-3.htm)" del protocolo TCP. Además de esto, recordé que existen técnicas de [escaneo](https://nmap.org/book/synscan.html) de [puertos de red](https://nmap.org/book/scan-methods-ack-scan.html) y [ataques de denegación de servicio](https://attack.mitre.org/techniques/T1499/001/) que consisten en manipular el proceso de three-way handshake y la funcionalidad general del protocolo TCP para lograr sus objetivos respectivos.  
+Según Wikipedia, Akamai es una compañía especializada en content delivery network (CDN), ciberseguridad, mitigación de ataques DDoS y servicios en la nube. Y como anécdota personal, hace años tuve un par de entrevistas laborales ahí, y en el proceso me di cuenta que en esa empresa tienen un conocimiento bastante amplio y profundo de cómo funcionan las redes a bajo nivel, con un enfoque especial en el proceso "[_three-way handshake_](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#Protocol_operation)" del protocolo TCP. Además de esto, recordé que existen técnicas de [escaneo](https://nmap.org/book/synscan.html) de [puertos de red](https://nmap.org/book/scan-methods-ack-scan.html) y [ataques de denegación de servicio](https://attack.mitre.org/techniques/T1499/001/) que consisten en manipular el proceso de three-way handshake y la funcionalidad general del protocolo TCP para lograr sus objetivos respectivos.  
 _Nota: la técnica de bloqueo de bots usada en este caso se llama “_[_tarpit_](https://en.wikipedia.org/wiki/Tarpit_%28networking%29)_” (¡gracias a Jose Hernan Perez en LinkedIn por señalarlo!)_
 
 ---

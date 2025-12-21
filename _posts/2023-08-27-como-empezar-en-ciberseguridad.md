@@ -3,8 +3,9 @@ title: ¿Cómo empezar en ciberseguridad?
 date: 2023-08-27
 categories: [CIBERSEGURIDAD, EMPLEO]
 tags: [ciberseguridad, empleo, costa rica]
+image:
+  path: /assets/img/posts/como-empezar-en-ciberseguridad/cover.png
 ---
-![cover](/assets/img/posts/como-empezar-en-ciberseguridad/cover.png)
 
 Hace algunos meses [respondí a un post de Reddit](https://web.archive.org/web/20230126170518/https://www.reddit.com/r/Ticos/comments/10li2lg/comment/j5zdzm4/?utm_source=reddit&utm_medium=web2x&context=3) de una persona que preguntaba cuál era el mejor lugar para estudiar ciberseguridad en Costa Rica. En el momento, intenté dar una explicación básica de lo amplio que es el campo de la ciberseguridad, y quise dar una guía muy general de cómo entrar en este campo.
 
@@ -57,8 +58,8 @@ Finalmente, quiero aclarar que ninguna de las cosas mencionadas en este blog pue
 
 ## Recursos adicionales
 ### Mis videos sobre este tema
-- [¿Cómo empezar en ciberseguridad?, en Costa Rica](https://www.youtube.com/watch?v=2JSR4d6DRzY)
-- [El ÚNICO video que vas a NECESITAR para empezar en CIBERSEGURIDAD este 2025 y ganar $999mil por hora](https://www.youtube.com/watch?v=THBnbU25ycQ)
+{% include embed/youtube.html id='2JSR4d6DRzY' %}
+{% include embed/youtube.html id='THBnbU25ycQ' %}
 
 ### Perspectivas diferentes de otros profesionales
 

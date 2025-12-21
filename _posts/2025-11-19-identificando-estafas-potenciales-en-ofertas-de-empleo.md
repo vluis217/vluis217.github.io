@@ -3,8 +3,9 @@ title: Identificando estafas potenciales en ofertas de empleo
 date: 2025-11-19
 categories: [CIBERSEGURIDAD, EMPLEO]
 tags: [ciberseguridad, empleo, estafas, costa rica]
+image:
+  path: /assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/cover.png
 ---
-![cover](/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/cover.png)
 
 ## Introducción
 

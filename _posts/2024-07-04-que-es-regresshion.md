@@ -3,8 +3,9 @@ title: CVE-2024-6387, "RegreSSHion", ¿qué es?
 date: 2024-07-04
 categories: [CIBERSEGURIDAD]
 tags: [ciberseguridad, regresshion, cve-2024-6387]
+image:
+  path: /assets/img/posts/que-es-regresshion/cover.png
 ---
-![cover](/assets/img/posts/que-es-regresshion/cover.png)
 
 _Quiero empezar aclarando que no soy un experto en esta clase de vulnerabilidades, no sé programar en C, y no tengo experiencia trabajando con estructuras de bajo nivel del sistema operativo (como el heap). Sin embargo, escribo este blog porque me parece fascinante la cadena de técnicas, la investigación y la gran creatividad usadas en el descubrimiento de esta vulnerabilidad, y me gustaría compartir los detalles importantes de la misma._
 
