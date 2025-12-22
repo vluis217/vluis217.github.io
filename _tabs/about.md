@@ -1,8 +1,8 @@
 ---
-# the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
 ---
+Ingeniero en ciberseguridad. Escribo sobre temas relacionados con ciberseguridad y empleo en el contexto costarricense.
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## Mis redes
+[https://linktr.ee/vluis217](https://linktr.ee/vluis217)
