@@ -6,5 +6,3 @@ Ingeniero en ciberseguridad. Escribo sobre temas relacionados con ciberseguridad
 
 ## Mis redes
 [https://linktr.ee/vluis217](https://linktr.ee/vluis217)
-
-test
