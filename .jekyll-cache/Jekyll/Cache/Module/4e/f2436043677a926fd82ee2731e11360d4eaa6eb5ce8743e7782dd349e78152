@@ -1,0 +1,59 @@
+I"�<!-- Get 5 last posted/updated posts -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="access-lastmod">
+    <h2 class="panel-heading">Recently Updated</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/stemjobs-faq/">STEMJobsCR - Qué, Cómo y Por Qué.</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/como-empezar-en-ciberseguridad/">¿Cómo empezar en ciberseguridad?</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/como-conseguir-su-primer-trabajo-en-ciberseguridad/">¿Cómo conseguir su primer trabajo en ciberseguridad?</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/que-es-regresshion/">CVE-2024-6387, "RegreSSHion", ¿qué es?</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/akamai-friendzoneo-a-mi-bot/">Akamai friendzoneó a mi bot 😔</a>
+        </li>
+      
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
+
+:ET

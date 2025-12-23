@@ -1,0 +1,52 @@
+I"l<p><em>Quiero empezar aclarando que no soy un experto en esta clase de vulnerabilidades, no sé programar en C, y no tengo experiencia trabajando con estructuras de bajo nivel del sistema operativo (como el heap). Sin embargo, escribo este blog porque me parece fascinante la cadena de técnicas, la investigación y la gran creatividad usadas en el descubrimiento de esta vulnerabilidad, y me gustaría compartir los detalles importantes de la misma.</em></p>
+
+<p>La vulnerabilidad CVE-2024-6387, nombrada “RegreSSHion” y descubierta por investigadores de Qualys, es un bug en OpenSSH entre la versión 8.5p1 y superiores hasta antes de la versión 9.8p1. OpenSSH es un software ampliamente usado en una gran cantidad de sistemas operativos para administración y autenticación remota, o sea, un software que permite usar una shell segura de forma remota. Esta vulnerabilidad, en caso de ser explotada exitosamente, podría ser utilizada para hacer un ataque de tipo RCE (Remote Code Execution) con privilegios elevados, sin necesidad de autenticarse.</p>
+
+<p>A primera vista la gravedad pareciera ser evidente, especialmente si se tiene en cuenta que es común encontrar este software directamente expuesto al Internet.</p>
+
+<h2 id="detalles-técnicos">Detalles técnicos</h2>
+
+<p>En términos técnicos simples, la vulnerabilidad funciona de la siguiente manera:</p>
+<ol>
+  <li>El atacante inicia el proceso de login, enviando datos maliciosos a la víctima, pero omitiendo el último byte, para que el servicio <code class="language-plaintext highlighter-rouge">sshd</code> en el dispositivo de la víctima se quede “esperando” a que el proceso de login se complete.</li>
+  <li>Momentos antes de que <code class="language-plaintext highlighter-rouge">sshd</code> cierre la conexión debido al intento de login “erróneo”, el atacante envía el último byte de la data de login.</li>
+  <li>Si este último byte llega justo antes de que se cierre la conexión, pero después de que <code class="language-plaintext highlighter-rouge">sshd</code> haya empezado el proceso para cerrarla, es posible que la data maliciosa que el atacante envió se ejecute como si fuera código con privilegios elevados (con el usuario <code class="language-plaintext highlighter-rouge">root</code>).</li>
+</ol>
+
+<p>Es importante notar que en las versiones más recientes de OpenSSH, es posible realizar 100 intentos de conexión (<code class="language-plaintext highlighter-rouge">MaxStartups</code>) cada 120 segundos (<code class="language-plaintext highlighter-rouge">LoginGraceTime</code>) con la configuración por defecto.</p>
+
+<p>Expuesto de esta manera el ataque podría parecer simple, pero para que tenga éxito es necesario:</p>
+<ul>
+  <li>Enviar data especialmente creada para realizar el ataque. Esta data puede ser un nombre de usuario malicioso, o una llave pública maliciosa.</li>
+  <li>Calcular el tiempo que le toma a los paquetes llegar del atacante a la víctima, para poder enviar el último byte en el momento exacto.</li>
+  <li>Que cuando el último byte llegue a la víctima, el programa esté ejecutando las funciones vulnerables que eventualmente ejecutarían el código malicioso.</li>
+  <li>Que la data maliciosa se haya guardado en la ubicación de memoria correcta.</li>
+</ul>
+
+<p>Además, es importante notar que:</p>
+<ul>
+  <li>El atacante es remoto y no tiene ni acceso ni conocimiento del estado interno de la memoria de la víctima.</li>
+  <li>La más mínima variación en la latencia de red cambia el proceso del ataque. Entre más “saltos” (dispositivos de red intermedios) haya entre el atacante y la víctima, más variación podría haber en los tiempos de envío y recepción de paquetes.</li>
+  <li>La velocidad (IPC y frecuencia) del procesador también influye en el proceso del ataque.</li>
+  <li>La versión, distribución y arquitectura (32/64bits) del sistema operativo puede hacer el ataque exponencialmente más complicado, o inclusive imposible. Por ejemplo, OpenBSD y Ubuntu 24.04 no son vulnerables a este ataque. Aún no se confirma si MacOS y Windows son afectados por esta vulnerabilidad.</li>
+  <li>Los controles de seguridad como allowlists, hardening de SSH, IDS, IPS, EDR, etc., pueden imposibilitar este ataque.</li>
+  <li>En este momento no hay ningún exploit público, y debido a la naturaleza de la vulnerabilidad, opino que hay pocas probabilidades que alguien desarrolle un “exploit universal”, fácil de ejecutar y que funcione para cualquier sistema operativo.</li>
+</ul>
+
+<h2 id="recomendaciones">Recomendaciones</h2>
+
+<p>A pesar de que el ataque es altamente complejo y hasta impráctico en este momento, es posible que en un futuro no muy lejano se encuentren formas de normalizar las variables necesarias para llevarlo a cabo, y que se vuelva trivial. Además, debido a que el resultado de una explotación exitosa es la ejecución de código de forma remota con privilegios elevados, esto es suficiente motivación para actores maliciosos sofisticados para dedicar una gran cantidad de recursos para perfeccionar este ataque.</p>
+
+<p>Es por esto que la principal recomendación es instalar la <a href="https://www.openssh.com/releasenotes.html#9.8p1">versión 9.8p1 de OpenSSH</a> (o superior), la cual contiene el parche para esta vulnerabilidad. Más allá de esto, esta versión contiene cambios importantes en la estructura interna del código de OpenSSH, por lo que cualquier mejora de seguridad o funcionalidad que se implemente después de esta será difícil de llevar a versiones anteriores. En otras palabras, sería ideal tomar esta oportunidad para actualizar sus instalaciones de OpenSSH.</p>
+
+<h2 id="notas-adicionales">Notas adicionales</h2>
+
+<p>En mi opinión, este ataque es mucho más viable como vector para escalación local de privilegios: si el atacante logra tener acceso a la víctima con un usuario de bajos privilegios, esto eliminaría la mayoría de variables e incertidumbre que conlleva el ataque remoto, haciéndolo más fácil de llevar a cabo de forma local, en teoría.</p>
+
+<h3 id="fuentes">Fuentes</h3>
+<ul>
+  <li><a href="https://www.qualys.com/2024/07/01/cve-2024-6387/regresshion.txt">https://www.qualys.com/2024/07/01/cve-2024-6387/regresshion.txt</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Rj3sTAMYNQk">https://www.youtube.com/watch?v=Rj3sTAMYNQk</a></li>
+  <li><a href="https://www.youtube.com/watch?v=2Ig05_aL4Xg">https://www.youtube.com/watch?v=2Ig05_aL4Xg</a></li>
+</ul>
+:ET

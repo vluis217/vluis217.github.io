@@ -1,0 +1,129 @@
+I"B8<p>Hace algunos meses <a href="https://web.archive.org/web/20230126170518/https://www.reddit.com/r/Ticos/comments/10li2lg/comment/j5zdzm4/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3">respondí a un post de Reddit</a> de una persona que preguntaba cuál era el mejor lugar para estudiar ciberseguridad en Costa Rica. En el momento, intenté dar una explicación básica de lo amplio que es el campo de la ciberseguridad, y quise dar una guía muy general de cómo entrar en este campo.</p>
+
+<p>Responder a la pregunta “¿cómo empezar en ciberseguridad?” es muy complicado porque, para empezar, ciberseguridad no es un rol o área única. La ciberseguridad es un campo transversal, que atraviesa todas las demás áreas de la tecnología. Existe la seguridad física, seguridad de software, seguridad ofensiva, seguridad defensiva, seguridad industrial, etc. Además, cada sub-área o especialización conlleva su propia terminología, estudio, estándares, etc.</p>
+
+<p><a href="https://github.com/L1ix/Map-of-Cybersecurity-Domains/blob/main/CybersecurityDomainMap3.1.jpg"><img src="https://raw.githubusercontent.com/L1ix/Map-of-Cybersecurity-Domains/main/CybersecurityDomainMap3.1.jpg" alt="Mapa de los dominios de ciberseguridad" /></a>
+Esto representa, sin lugar a dudas, un reto para quien quiera entrar en este mundo, debido a lo confuso y amplio que puede parecer. Sin embargo, al mismo tiempo presenta una oportunidad para cualquier persona, <strong><em>en ciberseguridad hay espacio para todos y todas.</em></strong></p>
+
+<p>Aquí no existe una única fórmula, un solo método o un solo camino que se pueda/deba seguir para conseguir trabajo, y se puede tener prácticamente cualquier combinación de estudios, conocimientos y habilidades previas. De hecho, son esos conocimientos previos los que dan ciertas ventajas de acuerdo al área: un ingeniero de redes puede fácilmente entrar al área de seguridad de redes; o un desarrollador de software puede moverse al área de desarrollo seguro de código. O menos obvio: un abogado o un contador podrían trabajar en gobernanza, riesgo y cumplimiento como auditores o implementando políticas y estándares de seguridad.</p>
+
+<h3 id="todo-esto-suena-bien-pero-aún-no-responde-la-pregunta-por-dónde-empezar">Todo esto suena bien, pero aún no responde la pregunta: ¿por dónde empezar?</h3>
+
+<p>Primero hay que definir el área de interés. En mi opinión, hay tres métodos generales para lograrlo:</p>
+<ol>
+  <li>Autodidacta: buscar en Google.</li>
+  <li>Una certificación básica: <a href="https://www.comptia.org/certifications/security">CompTIA Security+</a> o EC-Council Certified Ethical Hacker.</li>
+  <li>Un curso formal: en alguna universidad o instituto, o en línea.</li>
+</ol>
+
+<p>Lo que yo personalmente recomiendo es una combinación de los dos primeros métodos: usando <a href="https://lecbyo.files.cmp.optimizely.com/download/cf25ec24b8a511ef9ecbb69c0f9687be">el temario de Security+</a> como guía, estudiar por cuenta propia los diferentes temas.</p>
+
+<p>Hablando específicamente de ciberseguridad, el post podría terminar aquí. Sin embargo, como comenté antes, la ciberseguridad es un campo de especialización que trabaja sobre otras áreas. Es por esto que me parece que para tener la mayor probabilidad de éxito, tanto en el ámbito académico como en el laboral, es buena idea primero tener buenas bases en los siguientes temas:</p>
+<ul>
+  <li>Programación (al menos saber scripting)</li>
+  <li>Sistemas operativos (Linux/Windows) (al menos saber moverse por la terminal)</li>
+  <li>Redes (al menos saber subnetear)</li>
+  <li><strong><u>Inglés</u></strong></li>
+</ul>
+
+<h3 id="inglés">Inglés</h3>
+<p>Aún cuando la mayoría del contenido de este post son opiniones personales, no encuentro la forma de justificar objetivamente el no saber inglés. En otras palabras, hablar inglés (o como mínimo leerlo), es un requisito indispensable si se quiere tener éxito en ciberseguridad:</p>
+<ul>
+  <li>La mayoría de acrónimos y terminología están en inglés y no se pueden traducir directamente al español.</li>
+  <li>Muchas certificaciones, libros y cursos intermedios/avanzados solo se ofrecen en inglés.</li>
+  <li>Los mejores profesionales de todo el mundo se comunican en inglés, mediante charlas, blogs o tweets.</li>
+</ul>
+
+<p>La ciberseguridad cambia y se transforma cada día, y si uno quiere estar al día con los nuevos ataques, vulnerabilidades, noticias, técnicas, materiales de estudio, etc., <strong>el inglés es simplemente indispensable</strong>.</p>
+
+<h2 id="realidad-costarricense">Realidad costarricense</h2>
+<h3 id="educación">Educación</h3>
+<p>En nuestro caso, la educación es muy barata y de fácil acceso, por lo que llevar la carrera de Ingeniería en Sistemas es una forma excelente para aprender las bases de muchas tecnologías, y de paso hacer networking, mejorar el curriculum y ganar soft-skills, entre otras ventajas. El 99% de personas que dicen que la carrera universitaria no vale la pena es porque viven fuera de Costa Rica donde el estudio universitario es mucho más caro, y/o son desarrolladores de software, ya que en esa área es más común que no se tome en cuenta el título de la universidad.</p>
+
+<h3 id="trabajo">Trabajo</h3>
+<p>A pesar de que la ciberseguridad es un campo enorme, en Costa Rica usualmente no se encuentran puestos de seguridad en todas las áreas. Los puestos más comunes para principiantes son:</p>
+<ul>
+  <li><strong>SOC analyst</strong>: es recomendable conocer la terminología básica (SIEM, EDR/XDR, etc), y tener nociones básicas de herramientas como Splunk o QRadar (Splunk tiene un trial gratis, cualquiera lo puede bajar e instalar en un ambiente de prueba).</li>
+  <li><strong>IAM analyst</strong>: ideal saber la diferencia entre autorización y autenticación, qué es el principio de “least privilege”, RBAC, y nociones básicas de Active Directory.</li>
+</ul>
+
+<p>También hay bastantes puestos en las áreas de GRC (gobernanza, riesgo y cumplimiento) y SRE (site reliability engineering), pero éstos usualmente no son entry level.</p>
+
+<h3 id="networking">Networking</h3>
+<p>La comunidad DC11506 organiza charlas mensuales, eventos anuales, y me parece que de vez en cuando resuelven máquinas de HackTheBox en su <a href="https://dc506.org/join/">servidor de Discord</a>. Este también es un buen lugar para conocer gente que está o quiere entrar en ciberseguridad, y también para aprender y evacuar dudas con otros profesionales.
+<em>Nota: no tengo ninguna asociación ni relación con la comunidad DC11506.</em></p>
+
+<p>Finalmente, quiero aclarar que ninguna de las cosas mencionadas en este blog puede asegurar que alguien consiga o no un trabajo en ciberseguridad, solamente son consejos que pueden mejorar su probabilidad de éxito para entrar en este campo.</p>
+
+<h2 id="recursos-adicionales">Recursos adicionales</h2>
+<h3 id="mis-videos-sobre-este-tema">Mis videos sobre este tema</h3>
+<iframe class="embed-video" loading="lazy" src="https://www.youtube.com/embed/2JSR4d6DRzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe class="embed-video" loading="lazy" src="https://www.youtube.com/embed/THBnbU25ycQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h3 id="perspectivas-diferentes-de-otros-profesionales">Perspectivas diferentes de otros profesionales</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=lWTpglzvXZg">2023 Roadmap To Your First Cybersecurity Job (YouTube)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=WozNXkuE5Mg">Reunión Virtual del grupo DC506 - Tema: Como iniciar carrera en Ciberseguridad (YouTube)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=RRWioPc0Iyg">DC11506 - Ask Me Anything - ¿Como iniciar en ciberseguridad? (YouTube)</a></li>
+  <li><a href="https://dfirmadness.com/getting-into-infosec/the-five-pillars/">The Five Pillars of an InfoSec Professional (DFIR Madness)</a></li>
+  <li><a href="https://www.reddit.com/r/cybersecurity/comments/1609epy/resources_how_do_i_get_a_role_in_cybersecurity/">Resources: How Do I Get a Role in Cyber-Security (Reddit)</a></li>
+</ul>
+
+<h3 id="recursos-para-estudiarpracticar">Recursos para estudiar/practicar</h3>
+<ul>
+  <li>Curso básico de algoritmos (programación): <a href="https://frontendmasters.com/courses/algorithms/">https://frontendmasters.com/courses/algorithms/</a> (registrarse gratis <a href="https://frontendmasters.com/free/">aquí</a>)</li>
+  <li>Curso básico de Linux: <a href="https://training.linuxfoundation.org/training/introduction-to-linux/">https://training.linuxfoundation.org/training/introduction-to-linux/</a></li>
+  <li>Curso básico de redes: <a href="https://www.netacad.com/career-paths/network-technician">https://www.netacad.com/career-paths/network-technician</a></li>
+  <li>Curso gratis de Security+ SY0-701: <a href="https://youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv">https://youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv</a></li>
+  <li>Python: <a href="https://futurecoder.io/">https://futurecoder.io/</a></li>
+  <li>PowerShell: <a href="https://learn.microsoft.com/en-us/shows/GetStartedPowerShell3/">https://learn.microsoft.com/en-us/shows/GetStartedPowerShell3/</a></li>
+  <li>Colección de recursos básicos de seguridad de Microsoft: <a href="https://learn.microsoft.com/en-us/users/gitasharmasheher-3612/collections/yrrbdgy2d6158">https://learn.microsoft.com/en-us/users/gitasharmasheher-3612/collections/yrrbdgy2d6158</a></li>
+  <li>Curso básico de seguridad de Cisco: <a href="https://www.netacad.com/career-paths/cybersecurity">https://www.netacad.com/career-paths/cybersecurity</a></li>
+  <li>Curso intermedio de seguridad de Cisco: <a href="https://www.netacad.com/courses/ethical-hacker">https://www.netacad.com/courses/ethical-hacker</a></li>
+  <li>Plataforma con algunos recursos gratuitos para aprender sobre SOC: <a href="https://letsdefend.io/">https://letsdefend.io/</a></li>
+  <li>Curso “SOC Core Skills w/ John Strand”: <a href="https://www.youtube.com/playlist?list=PL-4fuTjKox5e3o8CHlMq7Y_TGTq1zEtfl">https://www.youtube.com/playlist?list=PL-4fuTjKox5e3o8CHlMq7Y_TGTq1zEtfl</a></li>
+  <li>Curso “Getting Started in Security with BHIS and MITRE ATT&amp;CK w/ John Strand”: <a href="https://www.youtube.com/playlist?list=PL-4fuTjKox5eqB_5liMJbrVkQlWUEZ558">https://www.youtube.com/playlist?list=PL-4fuTjKox5eqB_5liMJbrVkQlWUEZ558</a></li>
+  <li>Cursos de The Taggart Institute (modalidad “pay what you wish”): <a href="https://taggartinstitute.org/courses/">https://taggartinstitute.org/courses/</a></li>
+  <li>Cursos gratis de Splunk: <a href="https://www.splunk.com/en_us/training/free-courses/overview.html">https://www.splunk.com/en_us/training/free-courses/overview.html</a></li>
+  <li>Guías para aprender sobre una gran variedad de tecnologías y habilidades: <a href="https://roadmap.sh/">https://roadmap.sh/</a></li>
+</ul>
+
+<h3 id="ambientes-éticos-legales-y-seguros-para-practicar-penetration-testingexploits">Ambientes éticos, legales y seguros para practicar penetration testing/exploits</h3>
+<ul>
+  <li><a href="https://tryhackme.com/">https://tryhackme.com/</a></li>
+  <li><a href="https://www.hackthebox.com/">https://www.hackthebox.com/</a></li>
+  <li><a href="https://www.vulnhub.com/">https://www.vulnhub.com/</a></li>
+</ul>
+
+<h3 id="canales-de-youtube-que-recomiendo-seguir-para-aprender-y-para-ver-lo-que-es-posible-dentro-de-ciberseguridad">Canales de YouTube que recomiendo seguir (para aprender y para ver lo que es posible dentro de ciberseguridad)</h3>
+<ul>
+  <li><a href="https://www.youtube.com/@BlackHillsInformationSecurity">https://www.youtube.com/@BlackHillsInformationSecurity</a></li>
+  <li><a href="https://www.youtube.com/@AntisyphonTraining">https://www.youtube.com/@AntisyphonTraining</a></li>
+  <li><a href="https://www.youtube.com/@TylerRamsbey">https://www.youtube.com/@TylerRamsbey</a></li>
+  <li><a href="https://www.youtube.com/@Tib3rius">https://www.youtube.com/@Tib3rius</a></li>
+  <li><a href="https://www.youtube.com/@LowLevelTV">https://www.youtube.com/@LowLevelTV</a></li>
+  <li><a href="https://www.youtube.com/@_JohnHammond">https://www.youtube.com/@_JohnHammond</a></li>
+  <li><a href="https://www.youtube.com/@MalwareTechBlog">https://www.youtube.com/@MalwareTechBlog</a></li>
+  <li><a href="https://www.youtube.com/@NahamSec">https://www.youtube.com/@NahamSec</a></li>
+  <li><a href="https://www.youtube.com/@TCMSecurityAcademy">https://www.youtube.com/@TCMSecurityAcademy</a></li>
+  <li><a href="https://www.youtube.com/@InsiderPhD">https://www.youtube.com/@InsiderPhD</a></li>
+  <li><a href="https://www.youtube.com/@ippsec">https://www.youtube.com/@ippsec</a></li>
+  <li><a href="https://www.youtube.com/@Itcareerquestions">https://www.youtube.com/@Itcareerquestions</a></li>
+  <li><a href="https://www.youtube.com/@JackRhysider">https://www.youtube.com/@JackRhysider</a></li>
+  <li><a href="https://www.youtube.com/@LiveOverflow">https://www.youtube.com/@LiveOverflow</a></li>
+  <li><a href="https://www.youtube.com/@SANSCyberDefense">https://www.youtube.com/@SANSCyberDefense</a></li>
+  <li><a href="https://www.youtube.com/@SANSCloudSecurity">https://www.youtube.com/@SANSCloudSecurity</a></li>
+  <li><a href="https://www.youtube.com/@SANSOffensiveOperations">https://www.youtube.com/@SANSOffensiveOperations</a></li>
+</ul>
+
+<h3 id="comunidades-parcial-o-totalmente-enfocadas-en-ayudarle-a-más-personas-a-empezar-en-ciberseguridad">Comunidades parcial o totalmente enfocadas en ayudarle a más personas a empezar en ciberseguridad</h3>
+<ul>
+  <li>Black Hills Information Security: <a href="https://discord.com/invite/bhis">https://discord.com/invite/bhis</a></li>
+  <li>Hack Smarter: <a href="https://discord.gg/hacksmarter">https://discord.gg/hacksmarter</a></li>
+  <li>TCM Security: <a href="https://discord.com/invite/tcm">https://discord.com/invite/tcm</a></li>
+  <li>Pwned Labs: <a href="https://discord.gg/pwnedlabs">https://discord.gg/pwnedlabs</a></li>
+  <li>X Sec: <a href="https://discord.gg/GQWSqD7Ar7">https://discord.gg/GQWSqD7Ar7</a></li>
+</ul>
+:ET

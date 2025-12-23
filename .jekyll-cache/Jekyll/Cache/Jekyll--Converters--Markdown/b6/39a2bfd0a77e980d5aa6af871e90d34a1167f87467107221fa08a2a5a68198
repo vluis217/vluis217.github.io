@@ -1,0 +1,81 @@
+I"v<h2 id="introducción">Introducción</h2>
+
+<p>El día lunes 17 de noviembre de 2025, alrededor de las 9pm hora de Costa Rica, se publicó en LinkedIn la siguiente oferta de empleo:</p>
+
+<p><img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/telegram.png" alt="telegram" /></p>
+
+<p>Al ser de ciberseguridad me dio curiosidad y la abrí para ver qué requisitos pedía, y me di cuenta que buscaban a alguien con conocimientos avanzados y experiencia en básicamente todas las áreas de ciberseguridad. Unas semanas atrás Construplaza había publicado una <a href="https://www.linkedin.com/jobs/view/4305647903/">oferta de empleo parecida</a>, la cual compartí por lo ridícula que era, y decidí <a href="https://www.linkedin.com/posts/vluis_babe-wake-up-new-cybersoyla-job-just-dropped-activity-7396415849781342208-6w-R">hacer lo mismo</a> con esta.</p>
+
+<p>Sin embargo, al día siguiente noté que ahora la <a href="https://www.linkedin.com/jobs/view/4336681924/">oferta de empleo</a> tenía otro nombre, empresa, ubicación y detalles, completamente diferentes a los que mostraba inicialmente cuando la vi y la compartí. Después de confirmar que el link de la oferta que vi era el mismo que compartí, me puse a investigar más.</p>
+
+<h2 id="investigación">Investigación</h2>
+
+<p>Primero que todo, es importante notar que inicialmente la publicación de empleo decía que estaba asociada a la empresa “Universidad de Ciencias Médicas.“ (ojo el punto al final), y que dicha publicación fue hecha por un analista de tesorería cuyo perfil dice que trabaja para “Universidad de Ciencias Médicas“ (sin el punto). Esto es relevante porque en realidad la publicación de empleo está asociada a una empresa que no existe, pero que imita o se quiere hacer pasar por una que sí.</p>
+
+<p>Aparte de eso, ¿por qué un asistente de tesorería iba a publicar una oferta de empleo para un manager de ciberseguridad? (o para un CCO de una empresa de criptomonedas estadounidense). Sospecho que le robaron la cuenta, y la están usando para crear ofertas de empleo maliciosas.</p>
+
+<p>Luego, la nueva empresa que aparece en la publicación es “BitPay USA“:
+<img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/bitpayusa.png" alt="bitpay usa" /></p>
+
+<p><br />
+Esa “empresa“ no tiene página oficial (no se le puede dar click), o mejor dicho, la página oficial de BitPay <a href="https://www.linkedin.com/company/bitpay-inc-/">es otra</a>:
+<img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/bitpay.png" alt="bitpay" /></p>
+
+<p>De nuevo, usan un nombre muy parecido al de una empresa real pero con un leve cambio (USA al final en este caso) para hacer parecer que es una oferta de empleo legítima. En la <a href="https://www.linkedin.com/company/bitpay-inc-/jobs/">página oficial de BitPay en LinkedIn</a> no hay empleos disponibles, y en <a href="https://www.bitpay.com/careers#jobs">su bolsa de empleo propia</a> solo hay una publicación para un “Senior Software Developer“ .</p>
+
+<p>Además, en el cuerpo de la oferta sospechosa (claramente generado con IA), me pareció interesante lo siguiente:
+<img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/aboutthejob.png" alt="about the job" /></p>
+
+<p>Probablemente esto lo dicen para justificar la búsqueda de un gerente, y me pareció tan específico que decidí buscar más ofertas parecidas. Encontré unas cuantas:</p>
+
+<ul>
+  <li><a href="https://www.linkedin.com/jobs/view/4332612852/">https://www.linkedin.com/jobs/view/4332612852/</a>, otra “empresa“ de criptomonedas buscando un perfil de gerente:
+  <img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/grayscalecfo.png" alt="grayscale cfo" /></li>
+</ul>
+
+<p>En este caso sí se puede dar click al nombre de la empresa, pero no nos redirige a la página oficial:
+    <img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/grayscalellc.png" alt="grayscale llc" /></p>
+
+<p>Convenientemente, LinkedIn nos sugiere la página real en la barra de la derecha.</p>
+
+<ul>
+  <li>
+    <p><a href="https://www.linkedin.com/jobs/view/4322069154/">https://www.linkedin.com/jobs/view/4322069154/</a>, misma historia:
+  <img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/alchemycfo.png" alt="alchemy cfo" /></p>
+
+    <p>De nuevo, una “empresa“ con nombre parecido a <a href="https://www.linkedin.com/company/alchemyinc/">una real</a> (vuelve a aparecer el punto) en el área de blockchain/cripto/web3 buscando un gerente. Lo único diferente que tiene esta es el salario elevado que dice que ofrecen.</p>
+  </li>
+  <li>
+    <p><a href="https://www.linkedin.com/jobs/view/4340591233/">https://www.linkedin.com/jobs/view/4340591233/</a>:
+  <img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/blockusa.png" alt="block usa" /></p>
+  </li>
+</ul>
+
+<p>¿Ven el patrón?</p>
+
+<p>Además de todos esos detalles que ya mencioné, pareciera que estas ofertas sospechosas no pasan abiertas mucho tiempo.</p>
+
+<p>En este artículo reciente de NBC News se detallan este y otros tipos de estafas en procesos de reclutamiento: <a href="https://www.nbcnews.com/news/us-news/job-scam-ziprecruiter-linkedin-work-postings-fake-listing-rcna238162">https://www.nbcnews.com/news/us-news/job-scam-ziprecruiter-linkedin-work-postings-fake-listing-rcna238162</a></p>
+
+<p>Además, es posible que esto sea parte de una serie de intentos de infiltración de Corea del Norte, los cuales están robando identidades de latinos para conseguir empleo en empresas estadounidenses: <a href="https://quetzal.bitso.com/p/interview-with-the-chollima-iii">https://quetzal.bitso.com/p/interview-with-the-chollima-iii</a></p>
+
+<h2 id="ok-y-esto-cómo-me-afecta-qué-puedo-hacer-al-respecto">Ok, ¿y esto cómo me afecta?, ¿qué puedo hacer al respecto?</h2>
+
+<p>Este tipo específico de estafa parece estar dirigido a personas de alto perfil, o sea, gente que aplicaría a un puesto de gerente en una empresa de criptomonedas estadounidense, con el fin de suplantar su identidad o simplemente identificar individuos con capital digital para robárselo, por lo que la mayoría de personas en Costa Rica estarán probablemente a salvo de este tipo de estafas.</p>
+
+<p>En cualquier caso, es importante siempre tener en cuenta lo siguiente:</p>
+<ol>
+  <li>Si la oferta es demasiado buena para ser cierta, es probable que sea falsa. Confíe en su instinto y no aplique si nota algo extraño.</li>
+  <li>Nunca dé dinero y no saque préstamos como requisito para conseguir un trabajo. En ningún empleo respetable le van a pedir esas cosas.</li>
+  <li>Solo dé sus datos bancarios después de firmar un contrato y de haber validado que la empresa realmente existe.</li>
+  <li>Si en LinkedIn la oferta no está asociada a ninguna página válida y es de tipo EasyApply (o sea, que se postula directamente en LinkedIn), desconfíe y verifique toda la información de la oferta al menos tres veces antes de dar su información personal.</li>
+  <li>
+    <p>Reporte la oferta de empleo:</p>
+
+    <p><img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/report1.png" alt="report1" />
+ <img src="/assets/img/posts/identificando-estafas-potenciales-en-ofertas-de-empleo/report2.png" alt="report2" /></p>
+  </li>
+</ol>
+
+<p>En resumen, es cuestión de estar siempre vigilante y usar el sentido común.</p>
+:ET
